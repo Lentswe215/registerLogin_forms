@@ -1,95 +1,12 @@
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+    list-style: none;
 }
-
-body {
-    background-color: rgb(3, 41, 37);
-    color: antiquewhite;
+.hide {
+    display: none;
 }
-
-.container {
-    width: 100vw;
-    height: 100vh;
+.alert {
+   font-size: 12px;
 }
-h1 {
-    font-size:500%;
-    text-align: center;
-    text-transform: uppercase;
-    color: aqua;
-    margin-top: 2%;
-    background-color: black;
-}
-
-.form-register {
-    margin: 2% 10% 0 10%;
-    font-size: 23px;
-    background-color: rgb(37, 2, 2);
-    padding: 1%;
-}
-
-.form-register div {
-    margin: 2rem 3rem;
-    text-align: center;
-}
-.txtbox {
-    width: 500px;
-    height: 30px;
-    font-size: 20px;
-    text-align: center;
-}
-.form-register span {
-    margin-left: 10px;
-    margin-right: 5px;
-}
-
-.submitbtn {
-    width: 200px;
-    height: 30px;
-    font-size: 20px;
-    background-color: rgb(30, 88, 30);
-    border: 0;
-    color: white;
-    margin-right: 4%;
-    margin-left: -8px;
-}
-#ex {
-    color: azure;
-    background-color: black;
-}
-
-.link-to {
-    color: whitesmoke;
-    font-size: 18px;
-}
-
-.inner {
-    text-align: center;
-    background-color: teal;
-    margin-top: 5%;
-    font-size: 20px;
-    padding: 4px 0 4px 0 ;
-}
-
-#logged-user {
-    text-decoration: solid;
-    background-color: black;
-    color: white;
-    padding: 5px;
-}
-
-#messages {
-    font-size: 22px;
-    font-weight: 100;
-    text-decoration: darkcyan;
-    background-color: rgb(83, 68, 48);
-    text-align: center;
-}
-.success {
-    color: rgb(40, 163, 40);
-}
-
-.error {
-    color: rgb(250, 36, 36);
+small {
+    margin: 0.8rem 0.7rem;
 }
