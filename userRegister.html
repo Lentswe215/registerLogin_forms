@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>user registration</h1>
+        <form method="post" class="form-register">
+            <div>
+                <label for="fname">Firstname</label><br>
+                <input type="text" id="fname" placeholder="Enter firstname" class="txtbox">
+            </div>
+            <div>
+                <label for="lname">Lastname</label><br>
+                <input type="text" id="lname" placeholder="Enter lastname" class="txtbox">
+
+            </div>
+            <div>
+                <label for="lname">Username</label><br>
+                <input type="text" id="uname" placeholder="Enter lastname" class="txtbox">
+
+            </div>
+            <div>
+                <label for="name">Email</label><br>
+                <input type="email" id="user_email" id="email_textbox" class="txtbox" placeholder="example@email.com">
+            </div>
+            <div>
+                <label for="name">Password</label><br>
+                <input type="password" name="pass" id="pass_txt" class="txtbox" placeholder="Enter password">
+            </div>
+            <div>
+                <input type="submit" onclick="register()" class="submitbtn">Register</button>
+                <a href="/public/userLogin.html" class="link-to">If you're already registered</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="/public/javascript/script.js"></script>
+</body>
+
+</html>
