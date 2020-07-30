@@ -33,114 +33,129 @@
   </head>
 
   <body>
-    <!--<header class=" border-bottom border-primary">
-		<nav class="navbar navbar-expand-sm bg-dark">
-			<div class="container-fluid">
-				<a href="./index.html" class="navbar-brand text-Primary">
-					<h1 class='brand-class'><i class="fas fa-code"></i> Ephraim</h1>
-				</a>
-				<button class="navbar-toggler btn btn-outline-info" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<i class="fa fa-bars"></i>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="nav navbar-nav ml-auto">
-						<a href="./index.html" class="nav-link px-2 m-1 btn btn-outline-warning">Home <i
-								class="fas fa-home"></i></a>
-						<a href="./login.html" class="nav-link btn btn-outline-primary px-2 m-1">Sign-in <i
-								class="fas fa-sign-in-alt"></i></a>
-
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header> -->
-    <main data-router-wrapper>
-      <section data-router-view="registerpage" class="registerpage">
-        
-        <div class="wrapper pt-4">
-          <h1 class="page-heading bg-info text-center text-dark">User Register</h1>
-			<div class="container">
-          <form class="p-2">
-            <p id="messages" class="alert"></p>
-            <div class="form-group-md">
-              <label for="fname">First name</label><br />
-              <input
-                type="text"
-                id="fname"
-                placeholder="Enter firstname"
-                class="form-control"
-              />
-              <p id="firstnameMessages" class="alert alert-danger hide"></p>
-            </div>
-            <div class="form-group-md">
-              <label for="lname">Last name</label><br />
-              <input
-                type="text"
-                id="lname"
-                placeholder="Enter lastname"
-                class="form-control"
-              />
-              <p id="lastnameMessages" class="alert alert-danger hide"></p>
-            </div>
-            <div class="form-group-md">
-              <label for="lname">Username</label><br />
-              <input
-                type="text"
-                id="uname"
-                placeholder="Enter lastname"
-                class="form-control"
-              />
-              <p id="usernameMessages" class="alert alert-danger hide"></p>
-            </div>
-            <div class="form-group-md">
-              <label for="email">Email</label><br />
-              <input
-                type="email"
-                id="email_textbox"
-                class="form-control"
-                placeholder="example@email.com"
-              />
-              <p id="emailMessages" class="alert alert-danger hide"></p>
-            </div>
-            <div class="form-group-md">
-              <label for="password">Password</label><br />
-              <input
-                type="password"
-                name="pass"
-                id="pass_txt"
-                class="form-control"
-                placeholder="Enter password"
-              />
-              <p id="passwordMessages" class="alert alert-danger hide"></p>
-            </div>
-            <div class="form-group">
-              <label for="confirmPassword">Re-type Password</label><br />
-              <input
-                type="password"
-                id="confirm_password"
-                class="form-control"
-                placeholder="Re-type password"
-              />
-              <p id="cPasswordMessages" class="alert alert-danger hide"></p>
-            </div>
-            <div class="form-group-md">
-              <button
-                type="button"
-                onclick="register()"
-                class="btn btn-success mx-3"
-              >
-                Register
-              </button>
-              <span class="ml-3 small-text"
-                >If you're already have an account?</span
-              ><a href="/login.html" class="link-to"> Login</a>
-            </div>
-		  </form>
-		</div>
+    <header class="border-bottom border-primary">
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand text-Primary">
+            <h1 class="brand-class"><i class="fas fa-code"></i> Ephraim</h1>
+          </a>
+          <button
+            class="navbar-toggler btn btn-outline-info"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto" id="navbarSupportedContent">
+              <a
+                href="./index.html"
+                class="nav-link px-2 m-1 btn btn-outline-warning"
+                >Home <i class="fas fa-home"></i
+              ></a>
+              <a
+                href="./login.html"
+                class="nav-link btn btn-outline-primary px-2 m-1"
+                >Sign-in <i class="fas fa-sign-in-alt"></i
+              ></a>
+              <a
+                href="./register.html"
+                class="nav-link btn btn-outline-danger px-2 m-1"
+                >Sign-up <i class="fas fa-user-plus"></i
+              ></a>
+            </ul>
+          </div>
         </div>
-      </section>
+      </nav>
+    </header>
+    <main>
+        <div class="wrapper pt-4 registerpage">
+          <h1 class="page-heading bg-info text-center text-dark">
+            User Register
+          </h1>
+          <div class="container">
+            <form class="p-2">
+              <p id="messages" class="alert"></p>
+              <div class="form-group-md">
+                <label for="fname">First name</label><br />
+                <input
+                  type="text"
+                  id="fname"
+                  placeholder="Enter firstname"
+                  class="form-control"
+                />
+                <p id="firstnameMessages" class="alert alert-danger hide"></p>
+              </div>
+              <div class="form-group-md">
+                <label for="lname">Last name</label><br />
+                <input
+                  type="text"
+                  id="lname"
+                  placeholder="Enter lastname"
+                  class="form-control"
+                />
+                <p id="lastnameMessages" class="alert alert-danger hide"></p>
+              </div>
+              <div class="form-group-md">
+                <label for="lname">Username</label><br />
+                <input
+                  type="text"
+                  id="uname"
+                  placeholder="Enter lastname"
+                  class="form-control"
+                />
+                <p id="usernameMessages" class="alert alert-danger hide"></p>
+              </div>
+              <div class="form-group-md">
+                <label for="email">Email</label><br />
+                <input
+                  type="email"
+                  id="email_textbox"
+                  class="form-control"
+                  placeholder="example@email.com"
+                />
+                <p id="emailMessages" class="alert alert-danger hide"></p>
+              </div>
+              <div class="form-group-md">
+                <label for="password">Password</label><br />
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass_txt"
+                  class="form-control"
+                  placeholder="Enter password"
+                />
+                <p id="passwordMessages" class="alert alert-danger hide"></p>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Re-type Password</label><br />
+                <input
+                  type="password"
+                  id="confirm_password"
+                  class="form-control"
+                  placeholder="Re-type password"
+                />
+                <p id="cPasswordMessages" class="alert alert-danger hide"></p>
+              </div>
+              <div class="form-group-md">
+                <button
+                  type="button"
+                  onclick="register()"
+                  class="btn btn-success mx-3"
+                >
+                  Register
+                </button>
+                <span class="ml-3 small-text"
+                  >If you're already have an account?</span
+                ><a href="/login.html" class="link-to"> Login</a>
+              </div>
+            </form>
+          </div>
+        </div>
     </main>
     <script src="./javascript/register.js"></script>
   </body>
