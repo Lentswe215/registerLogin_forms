@@ -8,6 +8,7 @@ let users = [
   },
 ];
 
+console.log('I am visible')
 let message_text = "";
 let status = "";
 
@@ -42,7 +43,7 @@ function login() {
         status += "success";
 
         setTimeout(() => {
-          window.location.href='./index.html?=logged_in'
+          window.location.href='./index.html?=slogged_in'
         }, 700);
       } else {
         message_text += "Access denied";
