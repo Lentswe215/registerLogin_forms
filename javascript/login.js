@@ -8,7 +8,6 @@ let users = [
   },
 ];
 
-console.log('I am visible')
 let message_text = "";
 let status = "";
 
