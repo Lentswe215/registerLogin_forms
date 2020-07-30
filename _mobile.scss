@@ -18,12 +18,13 @@
     
         .page-heading {
         font-size: 37px;
-        margin-top: -10%;
+        margin-top: 1%;
           }
   }
-  .registerpage, .loginpage {
+  .registerpage , .loginpage{
     button {
-      width: 80%;
+      margin: 0 5%;
+      width: 90%;
     }
     .small-text {
       margin-top: 8px;
