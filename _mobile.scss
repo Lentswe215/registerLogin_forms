@@ -21,9 +21,13 @@
         margin-top: -10%;
           }
   }
-  .registerpage {
+  .registerpage, .loginpage {
     button {
-      width: 500px;
+      width: 80%;
+    }
+    .small-text {
+      margin-top: 8px;
+      font-size: 12px;
     }
   }
   .small-text {
