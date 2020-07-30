@@ -15,3 +15,6 @@ This are registration and login forms with validations. The register page doesn'
 - Javascript
 - Regular expressions
 - JQuery
+- Parcel-bundler
+- @dogstudio/Highway
+- gsap
