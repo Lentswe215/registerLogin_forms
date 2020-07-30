@@ -17,7 +17,6 @@ function login() {
   const messages = document.getElementById("messages");
   const usernameMessages = document.getElementById("username_messages");
   const passwordMessages = document.getElementById("password_messages");
-console.log(username, password)
   if (
     username.match(/\S.{4,}/g) &&
     password.match(/.{8,}/g) &&
@@ -43,7 +42,7 @@ console.log(username, password)
         status += "success";
 
         setTimeout(() => {
-          window.location.href='./index.html'
+          window.location.href='./index.html?=logged_in'
         }, 700);
       } else {
         message_text += "Access denied";

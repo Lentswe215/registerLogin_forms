@@ -50,7 +50,7 @@ function register() {
     messages.classList.add('alert-success')
 
     setTimeout(() => {
-        window.location.href='./userLogin.html';
+        window.location.href='./login.html';
           }, 300);
 
   } else {

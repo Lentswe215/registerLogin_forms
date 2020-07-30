@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User login</title>
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -21,44 +22,55 @@
 </head>
 
 <body>
-    <header class=" border-bottom border-primary">
+    <!-- <header class=" border-bottom border-primary">
         <nav class="navbar navbar-expand-lg bg-dark">
-          <div class="container-fluid">
-              <a href="#" class="navbar-brand text-Primary"><h1><i class="fas fa-code"></i> Ephraim</h1></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand text-Primary">
+                    <h1 class="brand-class"><i class="fas fa-code"></i> Ephraim</h1>
+                </a>
+                <button class="navbar-toggler btn btn-outline-info" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
                 </button>
-            <ul class="nav navbar-nav">
-              <a href="./index.html" class="nav-link px-2 mx-1 btn btn-outline-warning"><i class="fas fa-home">Home</i></a>
-              <a href="./register.html" class="nav-link btn btn-outline-danger px-2 mx-1"> <i class="fas fa-user-plus"></i> Sign-up</a>
-            </ul>
-          </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto" id="navbarSupportedContent">
+                        <a href="./index.html" class="nav-link px-2 m-1 btn btn-outline-warning">Home <i
+                                class="fas fa-home"></i></a>
+                        <a href="./register.html" class="nav-link btn btn-outline-danger px-2 m-1">Sign-up <i
+                                class="fas fa-user-plus"></i></a>
+                    </ul>
+                </div>
+            </div>
         </nav>
-      </header>
-    <main class="jumbotron m-5 bg-cyan text-dark">
-        <div class="container">
-            <h1 class="display-3 bg-primary text-center text-white text-uppercase mb-4">user login</h1>
-
-            <form class="">
-                <p id="messages" class="alert"> </p>
-                <div class="form-group">
-                    <label for="username">Username</label><br />
-                    <input type="email" name="emailtxt" id="usernametxt" class="form-control"
-                        placeholder="Enter username" />
-                    <p id="username_messages" class="alert alert-danger hide"></p>
+    </header> -->
+    <main data-router-wrapper>
+        <section data-router-view="loginpage" class="loginpage">
+            <div class="wrapper pt-4">
+                <h1 class="page-heading bg-primary text-center text-white text-uppercase">user login</h1>
+                <div class="container">
+                    <form>
+                        <p id="messages" class="alert"> </p>
+                        <div class="form-group">
+                            <label for="username">Username</label><br />
+                            <input type="email" name="emailtxt" id="usernametxt" class="form-control"
+                                placeholder="Enter username" />
+                            <p id="username_messages" class="alert alert-danger hide"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password"> Password</label><br />
+                            <input type="password" name="passwordtxt" id="passwordtxt" class="form-control"
+                                placeholder="password" />
+                            <p id="password_messages" class="alert alert-danger hide"> </p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-success mx-3" onclick="login()">Login</button>
+                            <span>Don't have account?</span> <a href="./register.html" class="link-to">Register</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="password"> Password</label><br />
-                    <input type="password" name="passwordtxt" id="passwordtxt" class="form-control"
-                        placeholder="password" />
-                    <p id="password_messages" class="alert alert-danger hide"> </p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-success mx-3" onclick="login()">Login</button>
-                    <span>Don't have account?</span> <a href="./register.html" class="link-to">Register</a>
-                </div>
-            </form>
-        </div>
+            </div>
+        </section>
     </main>
     <script src="/javascript/login.js"></script>
 </body>
